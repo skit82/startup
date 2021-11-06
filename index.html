@@ -4,14 +4,15 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta  name="description" content="Проект Choikhona Startup">
-	<title>
-		<link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
-  	<link rel="preload" href="fonts/montserrat-semiBold.woff2" as="font" crossorigin="anonymous">
-  	<link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous">
-  	<link rel="stylesheet" href="css/style.css">
-	</title>
+	<link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" href="fonts/montserrat-medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-semiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-extraBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+	<title>Choikhona Startup</title>
 </head>
-<body>
+<body class="page-body">
 	<header class="page-header">
 		<div class="page-header__wrapper">
 			<div class="page-header__top">
@@ -19,14 +20,22 @@
 					<img src="img/logo.png" width="190" height="90" alt="Логотип">
 				</a>
 				<div class="page-header__box">
-					<button class="page-header__box-contact"></button>
+					<a href="#">
+						Fundraising
+					</a>
+					<button class="page-header__box-contact">
+						<span class="page-header__box-block"></span>
+					</button>
 				</div>
+				<button class="page-header__button page-header__button--active" disabled="">
+          <span class="page-header__block page-header__block--active"></span>
+        </button>
 			</div>
 			<div class="page-header__footer">
-				<nav class="main-nav">
+				<nav class="main-nav main-nav--active">
 					<ul class="main-nav__list">
 						<li class="main-nav__item">
-							<a href="#">
+							<a href="#about">
 								О нас
 							</a>
 						</li>
@@ -73,26 +82,30 @@
 	<main>
 		<section class="description">
 			<div class="description__wrapper">
-				<h1>
-					Создайте свой startup<span>или</span> 
-					Инвестируйте с нами
-				</h1>
-				<p>
-					Проект Startup Choikhona поддерживает новое инновационное предпринимательство, увеличивает занятость молодежи и объединяет идеи, партнеров и предпринимателей.
-				</p>
-				<a href="#">
-					Выбрать продукт
-				</a>
+				<div class="description__box">
+					<h1>
+						Создайте свой startup<span>или</span> 
+						Инвестируйте с нами
+					</h1>
+					<p>
+						Проект Startup Choikhona поддерживает новое инновационное предпринимательство, увеличивает занятость молодежи и объединяет идеи, партнеров и предпринимателей.
+					</p>
+					<a href="#">
+						Выбрать продукт
+					</a>
+				</div>
 			</div>
 		</section>
-		<section class="about-us">
+		<section class="about-us" id="about">
 			<div class="about-us__wrapper">
-				<h2>
-					Choikhona Startup
-				</h2>
-				<p>
-					программа поддержки инновационных бизнес-идей среди молодёжи. Она обеспечивает занятость молодого поколения, стимулирует создание источников доходов и развивает предпринимательскую среду. Startup Сhoikhona – это ряд мероприятий и конкурсов, которые могут быть реализованы как в университетах, так и на межрегиональных площадках.
-				</p>
+				<div class="about-us__wrapper-box">
+					<h2>
+						Choikhona Startup
+					</h2>
+					<p>
+						программа поддержки инновационных бизнес-идей среди молодёжи. Она обеспечивает занятость молодого поколения, стимулирует создание источников доходов и развивает предпринимательскую среду. Startup Сhoikhona – это ряд мероприятий и конкурсов, которые могут быть реализованы как в университетах, так и на межрегиональных площадках.
+					</p>
+				</div>
 			</div>
 			<div class="about-us__inner">
 				<div class="about-us__inner-box">
@@ -134,6 +147,15 @@
 				</div>
 			</div>
 		</section>
+		<section class="team">
+			<div class="team__wrapper">
+				<h2>
+					Наша команда
+				</h2>
+			</div>
+			
+		</section>
 	</main>
+	<script src="js/main.js"></script>
 </body>
 </html>
