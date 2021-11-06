@@ -464,6 +464,13 @@ body {
     padding: 0 15px;
     margin-top: 50px;
   }
+  .about-us__wrapper-box h2 {
+    margin-top: 0px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+  }
   .about-us__inner-box h3 {
     max-width: 685px;
     font-weight: 800;
