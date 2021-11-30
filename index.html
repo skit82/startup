@@ -1,36 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta  name="description" content="Проект Choikhona Startup">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
 	<link rel="preload" href="fonts/montserrat-medium.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-semiBold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-extraBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 	<title>Choikhona Startup</title>
 </head>
 <body class="page-body">
+	 <svg style="display: none">
+    	<symbol id="icon-startup" viewBox="0 0 220 250">
+      <path d="M64.4808 112.069H83.4457V146.552H64.4808V112.069Z" fill="#118C8C"/>
+			<path d="M98.6172 86.2061H117.582V146.551H98.6172V86.2061Z" fill="#118C8C"/>
+			<path d="M132.754 103.448H151.719V146.552H132.754V103.448Z" fill="#118C8C"/>
+			<path d="M166.891 77.5864H185.856V146.552H166.891V77.5864Z" fill="#118C8C"/>
+			<path d="M216.2 0H197.235V8.62068H207.044L170.684 49.9396L139.229 14.194C138.518 13.3859 137.553 12.9319 136.548 12.9319C135.542 12.9319 134.577 13.3859 133.866 14.194L91.0319 62.8706L67.1627 35.7457C66.4514 34.9376 65.4868 34.4836 64.4811 34.4836C63.4753 34.4836 62.5107 34.9376 61.7994 35.7457L8.69775 96.0904L14.061 102.185L64.4811 44.8879L88.3503 72.0129C89.0616 72.8209 90.0262 73.2749 91.0319 73.2749C92.0377 73.2749 93.0023 72.8209 93.7136 72.0129L136.548 23.3362L168.003 59.0818C168.714 59.8899 169.679 60.3439 170.684 60.3439C171.69 60.3439 172.655 59.8899 173.366 59.0818L212.407 14.7155V25.862H219.993V4.31034C219.993 3.16717 219.594 2.07082 218.882 1.26247C218.171 0.454124 217.206 0 216.2 0Z" fill="#118C8C"/>
+			<path d="M218.733 155.913C216.824 152.589 213.902 150.185 210.528 149.163C207.153 148.14 203.566 148.572 200.454 150.374L179.714 162.443C181.13 166.273 181.283 170.554 180.147 174.503C179.011 178.451 176.661 181.803 173.528 183.943L131.316 212.391C121.417 219.093 109.626 221.205 98.393 218.288L60.2508 207.913L62.0145 199.529L100.081 209.874C109.417 212.287 119.213 210.533 127.443 204.973L169.652 176.525C171.375 175.355 172.624 173.46 173.127 171.25C173.629 169.041 173.346 166.696 172.337 164.723C170.131 160.383 166.542 157.173 162.311 155.757C158.081 154.341 153.533 154.827 149.61 157.115L118.996 174.969C116.855 176.219 114.479 176.863 112.071 176.845C109.663 176.827 107.294 176.148 105.167 174.865L84.3059 162.275C77.3903 158.118 69.6362 156.095 61.8177 156.409C53.9991 156.723 46.3899 159.362 39.7498 164.063L51.6445 228.499L57.9788 226.947C61.3051 226.134 64.7298 225.98 68.1023 226.49L115.48 232.395C124.392 233.746 133.431 231.345 140.893 225.645L216.65 167.887C218.311 166.602 219.461 164.628 219.853 162.389C220.245 160.15 219.846 157.825 218.744 155.917L218.733 155.913Z" fill="#118C8C"/>
+			<path d="M0 157.272L17.1215 250L46.5512 242.802L29.4259 150.074L0 157.272ZM14.895 175.634L13.3361 167.203L20.759 165.431L22.3179 173.858L14.895 175.634Z" fill="#118C8C"/>
+    	</symbol>
+    	<symbol id="icon-support" viewBox="0 0 220 250">
+      	<path d="M25.3846 250H194.615C208.613 250 220 240.144 220 228.027V73.2422H160.769C146.772 73.2422 135.385 63.3857 135.385 51.2695V0H25.3846C11.387 0 0 9.85645 0 21.9727V228.027C0 240.144 11.387 250 25.3846 250ZM59.2308 103.027H160.769C165.446 103.027 169.231 106.303 169.231 110.352C169.231 114.4 165.446 117.676 160.769 117.676H59.2308C54.5538 117.676 50.7692 114.4 50.7692 110.352C50.7692 106.303 54.5538 103.027 59.2308 103.027ZM59.2308 132.324H160.769C165.446 132.324 169.231 135.6 169.231 139.648C169.231 143.697 165.446 146.973 160.769 146.973H59.2308C54.5538 146.973 50.7692 143.697 50.7692 139.648C50.7692 135.6 54.5538 132.324 59.2308 132.324ZM59.2308 161.621H160.769C165.446 161.621 169.231 164.897 169.231 168.945C169.231 172.994 165.446 176.27 160.769 176.27H59.2308C54.5538 176.27 50.7692 172.994 50.7692 168.945C50.7692 164.897 54.5538 161.621 59.2308 161.621ZM59.2308 190.918H126.923C131.6 190.918 135.385 194.194 135.385 198.242C135.385 202.291 131.6 205.566 126.923 205.566H59.2308C54.5538 205.566 50.7692 202.291 50.7692 198.242C50.7692 194.194 54.5538 190.918 59.2308 190.918Z" fill="#118C8C"/>
+    	</symbol>
+    	<symbol id="icon-tel" viewBox="0 0 19 19">
+      	<g clip-path="url(#a)"><path d="M17.475 12.471c-1.163 0-2.305-.182-3.387-.54-.53-.18-1.183-.014-1.506.318l-2.137 1.613c-2.477-1.323-4.003-2.848-5.308-5.307l1.565-2.08c.407-.407.553-1 .378-1.557a10.804 10.804 0 0 1-.542-3.393C6.538.684 5.855 0 5.014 0h-3.49C.685 0 0 .684 0 1.525 0 11.16 7.84 19 17.475 19c.841 0 1.525-.684 1.525-1.525v-3.48c0-.84-.684-1.524-1.525-1.524Z" fill="#FC0"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h19v19H0z"/></clipPath></defs>
+    	</symbol>
+    	<symbol id="icon-vk" viewBox="0 0 60 60">
+    		<path d="M30 60c16.569 0 30-13.431 30-30C60 13.431 46.569 0 30 0 13.431 0 0 13.431 0 30c0 16.569 13.431 30 30 30Z" fill="#4D76A1"/><path fill-rule="evenodd" clip-rule="evenodd" d="M28.867 43.157h2.354s.712-.078 1.075-.47c.334-.358.323-1.033.323-1.033s-.046-3.16 1.42-3.625c1.446-.458 3.303 3.053 5.27 4.404 1.488 1.022 2.618.798 2.618.798l5.26-.074s2.753-.17 1.448-2.333c-.107-.177-.76-1.6-3.911-4.526-3.299-3.061-2.857-2.566 1.116-7.862 2.42-3.225 3.387-5.194 3.085-6.038-.288-.803-2.068-.59-2.068-.59l-5.923.036s-.439-.06-.765.135c-.318.191-.523.636-.523.636s-.937 2.496-2.187 4.618c-2.638 4.48-3.693 4.715-4.123 4.437-1.003-.648-.753-2.603-.753-3.993 0-4.34.658-6.15-1.282-6.618-.644-.156-1.117-.259-2.764-.275-2.113-.022-3.902.006-4.915.503-.674.33-1.194 1.065-.877 1.107.391.053 1.278.24 1.748.88.607.825.585 2.68.585 2.68s.35 5.109-.814 5.744c-.798.435-1.894-.454-4.245-4.517-1.205-2.081-2.114-4.382-2.114-4.382s-.176-.43-.489-.66c-.38-.279-.91-.367-.91-.367l-5.629.037s-.845.023-1.155.39c-.276.327-.022 1.003-.022 1.003s4.407 10.31 9.396 15.505c4.576 4.763 9.77 4.45 9.77 4.45Z" fill="#fff"/>
+    	</symbol>
+    	<symbol id="icon-whatsap" viewBox="0 0 60 60">
+    		<g clip-path="url(#a)"><path d="M51.3 8.623C45.6 3.113 38.1 0 30.113 0 7.188 0-7.207 24.837 4.24 44.595L0 60l15.838-4.13c6.9 3.727 12.552 3.398 14.29 3.617 26.582 0 39.814-32.16 21.135-50.767l.037-.098Z" fill="#ECEFF1"/><path d="m30.167 54.377-.015-.002h-.04c-7.955 0-13.037-3.767-13.537-3.985L7.2 52.828l2.512-9.113-.597-.938a24.671 24.671 0 0 1-3.79-13.15c0-21.982 26.862-32.974 42.407-17.437 15.508 15.375 4.62 42.188-17.565 42.188Z" fill="#4CAF50"/><path d="m43.767 35.767-.022.188c-.753-.375-4.418-2.168-5.1-2.415-1.533-.568-1.1-.09-4.043 3.28-.437.487-.872.525-1.615.187-.75-.375-3.157-1.162-6.007-3.712-2.22-1.988-3.71-4.425-4.15-5.175-.733-1.265.8-1.445 2.195-4.085.25-.525.122-.938-.063-1.31-.187-.375-1.68-4.05-2.305-5.515-.6-1.46-1.217-1.275-1.68-1.275-1.44-.125-2.492-.105-3.42.86-4.035 4.435-3.017 9.01.435 13.875 6.785 8.88 10.4 10.515 17.01 12.785 1.785.567 3.413.487 4.7.302 1.435-.227 4.418-1.802 5.04-3.565.638-1.762.638-3.225.45-3.562-.185-.338-.675-.525-1.425-.863Z" fill="#FAFAFA"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h60v60H0z"/></clipPath></defs>
+    	</symbol>
+    	<symbol id="icon-telegram" viewBox="0 0 60 60">
+    		<g clip-path="url(#a)"><path d="M30 60c16.568 0 30-13.432 30-30C60 13.43 46.567 0 30 0 13.43 0 0 13.431 0 30c0 16.568 13.431 30 30 30Z" fill="#41B4E6"/><path d="M60 30c0-.73-.027-1.455-.079-2.173L47.488 15.394 12.512 29.15l13.382 13.382.176.632.227-.23v.002l-.227.228 14.803 14.803C52.066 53.613 60 42.734 60 30Z" fill="#0091C8"/><path d="m27.087 34.37 13.557 10.237 6.844-29.213L12.512 29.15l10.643 3.525 19.423-13.028L27.086 34.37Z" fill="#fff"/><path d="m23.155 32.676 2.915 10.49 1.016-8.795 15.492-14.723-19.423 13.028Z" fill="#D2D2D7"/><path d="m31.493 37.698-5.423 5.467 1.016-8.794 4.407 3.327Z" fill="#B9B9BE"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h60v60H0z"/></clipPath></defs>
+    	</symbol>
+    	<symbol id="icon-insta" viewBox="0 0 60 60">
+    		<g clip-path="url(#a)"><path d="M3.75 4.082C-.965 8.98 0 14.182 0 29.987c0 13.125-2.29 26.283 9.695 29.38 3.742.963 36.903.963 40.64-.005 4.99-1.287 9.05-5.335 9.605-12.392.078-.985.078-32.963-.002-33.968-.59-7.517-5.218-11.85-11.316-12.727C47.226.072 46.946.012 39.776 0 14.343.012 8.768-1.12 3.75 4.082Z" fill="url(#b)"/><path d="M29.995 7.848c-9.078 0-17.698-.808-20.99 7.642-1.36 3.49-1.162 8.022-1.162 14.513 0 5.694-.183 11.047 1.162 14.51 3.285 8.455 11.975 7.645 20.985 7.645 8.692 0 17.655.904 20.988-7.645 1.362-3.526 1.162-7.99 1.162-14.51 0-8.655.477-14.243-3.72-18.438-4.25-4.25-9.998-3.717-18.435-3.717h.01ZM28.01 11.84c18.935-.03 21.345-2.135 20.015 27.107-.472 10.343-8.347 9.208-18.027 9.208-17.65 0-18.158-.505-18.158-18.163 0-17.862 1.4-18.142 16.17-18.157v.005Zm13.81 3.678a2.658 2.658 0 1 0 0 5.315 2.658 2.658 0 0 0 0-5.315Zm-11.825 3.107c-6.283 0-11.375 5.095-11.375 11.378 0 6.282 5.092 11.374 11.375 11.374s11.372-5.092 11.372-11.375c0-6.282-5.09-11.377-11.372-11.377Zm0 3.992c9.762 0 9.775 14.77 0 14.77-9.76 0-9.775-14.77 0-14.77Z" fill="#fff"/></g><defs><linearGradient id="b" x1="3.865" y1="56.167" x2="59.629" y2="7.905" gradientUnits="userSpaceOnUse"><stop stop-color="#FD5"/><stop offset=".5" stop-color="#FF543E"/><stop offset="1" stop-color="#C837AB"/></linearGradient><clipPath id="a"><path fill="#fff" d="M0 0h60v60H0z"/></clipPath></defs>
+    	</symbol>
+  </svg>
 	<header class="page-header">
 		<div class="page-header__wrapper">
 			<div class="page-header__top">
 				<a class="page-header__top-logo">
 					<img src="img/logo.png" width="190" height="90" alt="Логотип">
 				</a>
-				<div class="page-header__box">
-					<a href="#">
-						Fundraising
-					</a>
-					<button class="page-header__box-contact">
-						<span class="page-header__box-block"></span>
-					</button>
-				</div>
-				<button class="page-header__button page-header__button--active" disabled="">
-          <span class="page-header__block page-header__block--active"></span>
-        </button>
-			</div>
 			<div class="page-header__footer">
 				<nav class="main-nav main-nav--active">
 					<ul class="main-nav__list">
@@ -40,27 +59,27 @@
 							</a>
 						</li>
 						<li class="main-nav__item">
-							<a href="#">
+							<a href="#teams">
 								Команда
 							</a>
 						</li>
 						<li class="main-nav__item">
-							<a href="#">
+							<a href="#meeting">
 								Инвенты
 							</a>
 						</li>
 						<li class="main-nav__item">
-							<a href="#">
+							<a href="#new">
 								Новости
 							</a>
 						</li>
 						<li class="main-nav__item">
-							<a href="#">
+							<a href="#partners">
 								Партнеры
 							</a>
 						</li>
 						<li class="main-nav__item">
-							<a href="#">
+							<a href="#feedback">
 								Обратная связь
 							</a>
 						</li>
@@ -75,7 +94,46 @@
 							</a>
 						</li>
 					</ul>
+				<div class="page-header__box">
+					<a href="#support">
+						Fundraising
+					</a>
+					<button class="page-header__box-contact">
+						<span class="page-header__box-block"></span>
+					</button>
+					<ul class="main-nav__sub">
+            <li class="main-nav__sub-item">
+              <a class="main-nav__sub-link" href="#">
+                Форум
+              </a>
+            </li>
+            <li class="main-nav__sub-item">
+              <a class="main-nav__sub-link" href="#">
+                Образовательное
+              </a>
+            </li>
+            <li class="main-nav__sub-item">
+              <a class="main-nav__sub-link" href="#">
+                Опросы
+              </a>
+              </li>
+              <li class="main-nav__sub-item">
+                <a class="main-nav__sub-link" href="#">
+                  ВХОД
+                </a>
+              </li>
+              <li class="header-menu-mob__sub-item">
+                <a class="main-nav__sub-link" href="#">
+                  Регистрация
+                </a>
+              </li>
+            </ul>
+				</div>
 				</nav>
+			</div>
+				<button class="page-header__button page-header__button--active" disabled="">
+          <span class="page-header__block page-header__block--active"></span>
+        </button>
 			</div>
 		</div>
 	</header>
@@ -90,7 +148,7 @@
 					<p>
 						Проект Startup Choikhona поддерживает новое инновационное предпринимательство, увеличивает занятость молодежи и объединяет идеи, партнеров и предпринимателей.
 					</p>
-					<a href="#">
+					<a href="#product">
 						Выбрать продукт
 					</a>
 				</div>
@@ -108,11 +166,12 @@
 				</div>
 			</div>
 			<div class="about-us__inner">
-				<div class="about-us__inner-box">
-					<h3>
-						Цель – повышение предпринимательской активности и формирование благоприятной среды для начинающих предпринимателей:
-					</h3>
-					<ul class="about-us__inner-list">
+					<div class="about-us__inner-box">
+						<h3>
+							Цель – повышение предпринимательской активности и формирование благоприятной среды для начинающих предпринимателей:
+						</h3>
+						<div class="about-us__box">
+							<ul class="about-us__inner-list">
 						<li class="about-us__inner-item">
 							<p>
 								Стимулирование молодежи к участию в разработке и реализации инновационных бизнес-проектов в приоритетных для экономики региона направлениях;
@@ -143,19 +202,594 @@
 								Популяризация предпринимательской деятельности;
 							</p>
 						</li>
-					</ul>
-				</div>
+							</ul>
+							<div class="about-us__picture">
+								<img src="img/about-img.jpg" width="999" height="543" alt="Картинка">
+							</div>
+						</div>
+					</div>
 			</div>
 		</section>
-		<section class="team">
+		<section class="team" id="teams">
 			<div class="team__wrapper">
 				<h2>
 					Наша команда
 				</h2>
+				<div class="team__slider">
+					<div class="team__swiper swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide team__item">
+							<div class="team__img">
+								<img src="img/team-img1.jpg" width="250" height="250" alt="Команда">
+							</div>
+							<div class="team__descr">
+								<h3>
+									Мирзоев Мирзо
+								</h3>
+								<p>
+									название должности
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide team__item">
+							<div class="team__img">
+								<img src="img/team-img2.jpg" width="250" height="250" alt="Команда">
+							</div>
+							<div class="team__descr">
+								<h3>
+									Мирзоев Мирзо
+								</h3>
+								<p>
+									название должности
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide team__item">
+							<div class="team__img">
+								<img src="img/team-img3.jpg" width="250" height="250" alt="Команда">
+							</div>
+							<div class="team__descr">
+								<h3>
+									Мирзоев Мирзо
+								</h3>
+								<p>
+									название должности
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide team__item">
+							<div class="team__img">
+								<img src="img/team-img4.jpg" width="250" height="250" alt="Команда">
+							</div>
+							<div class="team__descr">
+								<h3>
+									Мирзоев Мирзо
+								</h3>
+								<p>
+									название должности
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide team__item">
+							<div class="team__img">
+								<img src="img/team-img1.jpg" width="250" height="250" alt="Команда">
+							</div>
+							<div class="team__descr">
+								<h3>
+									Мирзоев Мирзо
+								</h3>
+								<p>
+									название должности
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide team__item">
+							<div class="team__img">
+								<img src="img/team-img1.jpg" width="250" height="250" alt="Команда">
+							</div>
+							<div class="team__descr">
+								<h3>
+									Мирзоев Мирзо
+								</h3>
+								<p>
+									название должности
+								</p>
+							</div>
+						</div>
+					</div>
+					</div>
+					<div class="team__btn-prev swiper-button-prev"></div>
+					<div class="team__btn-next swiper-button-next"></div>
+					<div class="team__pagination swiper-pagination"></div>
+				</div>
 			</div>
-			
+		</section>
+		<section class="meeting" id="meeting">
+			<div class="meeting__wrapper">
+				<h2>
+					Наши мероприятия
+				</h2>
+				<div class="meeting__slider">
+					<div class="meeting__swiper swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide meeting__item">
+								<div class="meeting__picture">
+									<img src="img/img-film1.jpg" width="350" height="177" alt="Картинка новости">
+								</div>
+								<div class="meeting__inner">
+									<div class="meeting__inner-descr">
+										<h3>
+											Название мероприятия
+										</h3>
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum, doloremque obcaecati dignissimos natus magnam provident cum...
+										</p>
+										<time datetime="2021-10-01">01.10.2021</time>
+									</div>
+								</div>
+								<div class="meeting__inner-btn">
+									<a href="#">
+										Дополнительно
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide meeting__item">
+								<div class="meeting__picture">
+									<img src="img/img-film2.jpg" width="350" height="200" alt="Картинка новости">
+								</div>
+								<div class="meeting__inner">
+									<div class="meeting__inner-descr">
+										<h3>
+											Название мероприятия 
+										</h3>
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum, doloremque obcaecati dignissimos natus magnam provident cum...
+										</p>
+										<time datetime="2021-10-01">01.10.2021</time>
+									</div>
+								</div>
+								<div class="meeting__inner-btn">
+									<a href="#">
+										Дополнительно
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide meeting__item">
+								<div class="meeting__picture">
+									<img src="img/img-film3.jpg" width="350" height="217" alt="Картинка новости">
+								</div>
+								<div class="meeting__inner">
+									<div class="meeting__inner-descr">
+										<h3>
+											Название мероприятия 
+										</h3>
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum, doloremque obcaecati dignissimos natus magnam provident cum...
+										</p>
+										<time datetime="2021-10-01">01.10.2021</time>
+									</div>
+								</div>
+								<div class="meeting__inner-btn">
+									<a href="#">
+										Дополнительно
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide meeting__item">
+								<div class="meeting__picture">
+									<img src="img/img-film3.jpg" width="350" height="217" alt="Картинка новости">
+								</div>
+								<div class="meeting__inner">
+									<div class="meeting__inner-descr">
+										<h3>
+											Название мероприятия 
+										</h3>
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum, doloremque obcaecati dignissimos natus magnam provident cum...
+										</p>
+										<time datetime="2021-10-01">01.10.2021</time>
+									</div>
+								</div>
+								<div class="meeting__inner-btn">
+									<a href="#">
+										Дополнительно
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide meeting__item">
+								<div class="meeting__picture">
+									<img src="img/img-film3.jpg" width="350" height="217" alt="Картинка новости">
+								</div>
+								<div class="meeting__inner">
+									<div class="meeting__inner-descr">
+										<h3>
+											Название мероприятия 
+										</h3>
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum, doloremque obcaecati dignissimos natus magnam provident cum...
+										</p>
+										<time datetime="2021-10-01">01.10.2021</time>
+									</div>
+								</div>
+								<div class="meeting__inner-btn">
+									<a href="#">
+										Дополнительно
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				<div class="meeting__btn-prev swiper-button-prev"></div>
+				<div class="meeting__btn-next swiper-button-next"></div>
+				<div class="meeting__pagination swiper-pagination"></div>
+			</div>
+					<a class="meeting__link" href="#">
+						Все мероприятия
+					</a>
+			</div>
+		</section>
+		<section class="new" id="new">
+			<div class="new__wrapper">
+				<div class="new__description">
+					<h2>
+						Новости
+					</h2>
+					<ul class="hew__description-list">
+						<li class="hew__description-item">
+							<div class="hew__description-picture">
+								<img src="img/img-new1.jpg" width="350" height="260" alt="Картинка новости">
+							</div>
+							<div class="hew__description__inner">
+								<div class="hew__description__inner-descr">
+									<h3>
+										Название новостей 
+									</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum, doloremque obcaecati dignissimos natus magnam provident cum...
+									</p>
+									<time datetime="2021-10-01">01.10.2021</time>
+								</div>
+							</div>
+							<div class="hew__description__inner-btn">
+								<a href="#">
+									Читать далее
+								</a>
+							</div>
+						</li>
+						<li class="hew__description-item">
+							<div class="hew__description-picture">
+								<img src="img/img-new1.jpg" width="350" height="260" alt="Картинка новости">
+							</div>
+							<div class="hew__description__inner">
+								<div class="hew__description__inner-descr">
+									<h3>
+										Название новостей 
+									</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum, doloremque obcaecati dignissimos natus magnam provident cum...
+									</p>
+									<time datetime="2021-10-01">01.10.2021</time>
+								</div>
+							</div>
+							<div class="hew__description__inner-btn">
+								<a href="#">
+									Читать далее
+								</a>
+							</div>
+						</li>
+						<li class="hew__description-item">
+							<div class="hew__description-picture">
+								<img src="img/img-new1.jpg" width="350" height="260" alt="Картинка новости">
+							</div>
+							<div class="hew__description__inner">
+								<div class="hew__description__inner-descr">
+									<h3>
+										Название новостей 
+									</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum, doloremque obcaecati dignissimos natus magnam provident cum...
+									</p>
+									<time datetime="2021-10-01">01.10.2021</time>
+								</div>
+							</div>
+							<div class="hew__description__inner-btn">
+								<a href="#">
+									Читать далее
+								</a>
+							</div>
+						</li>
+					</ul>
+					<a class="new__description-link" href="#">
+						Все новости
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="product" id="product">
+			<div class="product__wrapper">
+				<h2>
+					Наши продукты
+				</h2>
+				<div class="product__inner">
+					<ul class="product__list">
+						<li class="product__item">
+							<div class="product__picture">
+								<img src="img/product-img1.png" width="192" height="183" alt="Картинка продукта">
+							</div>
+							<div class="product__descr">
+								<h3>
+									Школа инвестирования
+								</h3>
+								<span>
+									от 5 000 Сомони/Мес.
+								</span>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum, doloremque obcaecati dignissimos natus magnam provident cum deleniti
+								</p>
+							</div>
+							<div class="product__buy">
+								<button>
+									Заказать
+								</button>
+								<a href="#">
+									Подробнее
+								</a>
+							</div>
+						</li>
+						<li class="product__item">
+							<div class="product__picture">
+								<img src="img/product-img2.png" width="173" height="186" alt="Картинка продукта">
+							</div>
+							<div class="product__descr">
+								<h3>
+									Школа стартапа 
+								</h3>
+								<span>
+									от 10 000 Сомони/Мес.
+								</span>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum, doloremque obcaecati dignissimos natus magnam provident cum deleniti
+								</p>
+							</div>
+							<div class="product__buy">
+								<button>
+									Заказать
+								</button>
+								<a href="#">
+									Подробнее
+								</a>
+							</div>
+						</li>
+						<li class="product__item">
+							<div class="product__picture">
+								<img src="img/product-img3.png" width="167" height="191" alt="Картинка продукта">
+							</div>
+							<div class="product__descr">
+								<h3>
+									Школа инвестирования
+								</h3>
+								<span>
+									от 10 000 Сомони/Мес.
+								</span>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum, doloremque obcaecati dignissimos natus magnam provident cum deleniti
+								</p>
+							</div>
+							<div class="product__buy">
+								<button>
+									Заказать
+								</button>
+								<a href="#">
+									Подробнее
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="product__footer">
+					<a href="#">
+						Все программы
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="partners" id="partners">
+			<div class="partners__wrapper">
+				<h2>
+					Наши партнеры
+				</h2>
+				<div class="partners__slaider">
+					<div class="partners__swiper swiper-container">
+						<div class="swiper-wrapper">
+							<div class="partners__item swiper-slide">
+								<img src="img/partners-img1.png" width="141" height="53" alt="Партнеры">
+							</div>
+							<div class="partners__item swiper-slide">
+								<img src="img/partners-img2.png" width="225" height="225" alt="Партнеры">
+							</div>
+							<div class="partners__item swiper-slide">
+								<img src="img/partners-img3.png" width="300" height="70" alt="Партнеры">
+							</div>
+							<div class="partners__item swiper-slide">
+								<img src="img/partners-img4.png" width="1887" height="708" alt="Партнеры">
+							</div>
+							<div class="partners__item swiper-slide">
+								<img src="img/partners-img5.png" width="159" height="318" alt="Партнеры">
+							</div>
+							<div class="partners__item swiper-slide">
+								<img src="img/partners-img1.png" width="141" height="53" alt="Партнеры">
+							</div>
+							<div class="partners__item swiper-slide">
+								<img src="img/partners-img2.png" width="225" height="225" alt="Партнеры">
+							</div>
+							<div class="partners__item swiper-slide">
+								<img src="img/partners-img3.png" width="300" height="70" alt="Партнеры">
+							</div>
+							<div class="partners__item swiper-slide">
+								<img src="img/partners-img4.png" width="1887" height="708" alt="Партнеры">
+							</div>
+							<div class="partners__item swiper-slide">
+								<img src="img/partners-img5.png" width="159" height="318" alt="Партнеры">
+							</div>
+						</div>
+					</div>
+						<div class="partners__btn-prev swiper-button-prev"></div>
+						<div class="partners__btn-next swiper-button-next"></div>	
+						<div class="partners__pagination swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+		<section class="support" id="support">
+			<div class="support__wrapper">
+				<h2>
+					Fundraising
+				</h2>
+				<div class="support__inner">
+					<div class="support__inner-support">
+						<a href="#">
+							<svg class="support__icon-support" width="220" height="250">
+              	<use xlink:href="#icon-support"></use>
+            	</svg>
+            	<p>
+            		Поддержка мероприятий
+            	</p>
+            </a>
+					</div>
+					<div class="support__inner-startup">
+						<a href="#">
+							<svg class="support__icon-startup" width="220" height="250">
+              	<use xlink:href="#icon-startup"></use>
+            	</svg>
+            	<p>
+            		Поддержка стартапов
+            	</p>
+            </a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="info">
+			<div class="info__wrapper">
+				<h2 class="visually-hidden">
+					Информация
+				</h2>
+				<div class="info__descr">
+					<p>
+						Не получилось найти необходимую информацию
+						Вы можете задать по телефону:
+					</p>
+					<div class="info__descr-contact">
+						<svg class="info__icon-tel" width="19" height="19">
+              <use xlink:href="#icon-tel"></use>
+            </svg>
+						<a href="tel:+992 900 00 00 00">
+							+992 900 00 00 00
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="feedback" id="feedback">
+			<div class="feedback__wrapper">
+				<div class="feedback__form">
+					<h2>
+						Форма обратной связи
+					</h2>
+					<p>
+						Перезвоним через несколько минут и ответим на ваши вопросы
+					</p>
+					<form  action="" method="POST" autocomplete="off">
+      			<label class="visually-hidden" for="call-name">Имя:</label>
+      			<input type="text" id="call-name" name="callform-login" placeholder="Имя:" required="">
+      			<label class="visually-hidden" for="callform-phone">Телефон:</label>
+      			<input type="tel" id="callform-phone" name="callform-tel" placeholder="Телефон:" required="">
+      			<button type="submit">Отправить</button>
+      			<div class="feedback__inner">
+        			<label>
+         	 			<input class="feedback__chechbox" type="checkbox" checked>
+          			<span class="feedback__icon"></span>
+        			</label>
+        			<p>
+        				Я принимаю условия Пользовательского соглашения и даю свое согласие на обработку моих персональных данных в соответствии с Политикой конфиденциальности
+        			</p>
+      			</div>
+      		</form>
+				</div>
+			</div>
 		</section>
 	</main>
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<div class="page-footer__clock">
+				<h3>
+					Режим работы
+				</h3>
+				<p>
+					<span>ПН-ПТ:</span> с 08:00 до 17:00
+				</p>
+				<p>
+					<span>Сб, ВС:</span> с 10:00 до 13:00
+				</p>
+			</div>
+			<div class="page-footer__box copyright">
+			<p>
+				© 2021
+			</p>
+			<p>
+				Все права защищены
+			</p>
+		</div>
+		<div class="page-footer__box social">
+			<h3>
+				Мы в социальных сетях
+			</h3>
+			<ul class="social__list">
+				<li class="social__item">
+					<a href="#">
+						<svg class="social__icon" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_28:258)">
+						<path d="M3.75001 4.08225C-0.96499 8.97976 9.86457e-06 14.1823 9.86457e-06 29.9873C9.86457e-06 43.1123 -2.28999 56.2698 9.69501 59.3673C13.4375 60.3298 46.5975 60.3298 50.335 59.3623C55.325 58.0748 59.385 54.0273 59.94 46.9698C60.0175 45.9848 60.0175 14.0073 59.9375 13.0023C59.3475 5.48476 54.72 1.15225 48.6225 0.27475C47.225 0.07225 46.945 0.0122499 39.775 -0.000250123C14.3425 0.0122499 8.76751 -1.12025 3.75001 4.08225V4.08225Z" fill="url(#paint0_linear_28:258)"/>
+						<path d="M29.995 7.84755C20.9175 7.84755 12.2975 7.04005 9.00502 15.49C7.64502 18.98 7.84252 23.5125 7.84252 30.0025C7.84252 35.6975 7.66002 41.05 9.00502 44.5125C12.29 52.9675 20.98 52.1575 29.99 52.1575C38.6825 52.1575 47.645 53.0625 50.9775 44.5125C52.34 40.9875 52.14 36.5225 52.14 30.0025C52.14 21.3475 52.6175 15.76 48.42 11.565C44.17 7.31505 38.4225 7.84755 29.985 7.84755H29.995ZM28.01 11.84C46.945 11.81 49.355 9.70505 48.025 38.9475C47.5525 49.29 39.6775 48.155 29.9975 48.155C12.3475 48.155 11.84 47.65 11.84 29.9925C11.84 12.13 13.24 11.85 28.01 11.835V11.84ZM41.82 15.5175C40.3525 15.5175 39.1625 16.7075 39.1625 18.175C39.1625 19.6425 40.3525 20.8325 41.82 20.8325C43.2875 20.8325 44.4775 19.6425 44.4775 18.175C44.4775 16.7075 43.2875 15.5175 41.82 15.5175V15.5175ZM29.995 18.625C23.7125 18.625 18.62 23.72 18.62 30.0025C18.62 36.285 23.7125 41.3775 29.995 41.3775C36.2775 41.3775 41.3675 36.285 41.3675 30.0025C41.3675 23.72 36.2775 18.625 29.995 18.625V18.625ZM29.995 22.6175C39.7575 22.6175 39.77 37.3875 29.995 37.3875C20.235 37.3875 20.22 22.6175 29.995 22.6175Z" fill="white"/>
+						</g>
+						<defs>
+						<linearGradient id="paint0_linear_28:258" x1="3.86506" y1="56.1675" x2="59.6288" y2="7.90476" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#FFDD55"/>
+						<stop offset="0.5" stop-color="#FF543E"/>
+						<stop offset="1" stop-color="#C837AB"/>
+						</linearGradient>
+						<clipPath id="clip0_28:258">
+						<rect width="60" height="60" fill="white"/>
+						</clipPath>
+						</defs>
+					</svg>
+					</a>
+				</li>
+				<li class="social__item">
+					<a href="#">
+						<svg class="social__icon" width="60" height="60">
+              <use xlink:href="#icon-vk"></use>
+            </svg>
+					</a>
+				</li>
+				<li class="social__item">
+					<a href="#">
+						<svg class="social__icon" width="60" height="60">
+              <use xlink:href="#icon-telegram"></use>
+            </svg>
+					</a>
+				</li>
+				<li class="social__item">
+					<a href="#">
+						<svg class="social__icons" width="60" height="60">
+              <use xlink:href="#icon-whatsap"></use>
+            </svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</footer>
+	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
